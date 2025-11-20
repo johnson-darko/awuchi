@@ -33,6 +33,15 @@ header {
   text-align: center;
   font-size: 1.2rem;
 }
+.tagline {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+}
 #map-section {
   display: flex;
   flex-direction: column;
