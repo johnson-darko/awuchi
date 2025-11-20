@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awuchi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Awuchi – Your trusted street digital station</h1>
+  </header>
+  <div id="spinner" class="spinner-overlay">
+    <div class="spinner"></div>
+  </div>
+  <main>
+    <section id="map-section">
+      <div id="map"></div>
+      <button id="find-near-me">Find Awuchi Near Me</button>
+    </section>
+    <section id="kiosk-list-section">
+      <h2>Kiosk Locations</h2>
+      <div id="kiosk-list"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
