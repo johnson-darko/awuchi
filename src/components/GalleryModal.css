@@ -44,7 +44,7 @@
 }
 .pw-modal-close {
   margin-top: 1.2rem;
-  background: linear-gradient(178deg, #0A1A2F 60%, #C0C0C0 100%);
+  background: linear-gradient(90deg, #0A1A2F 60%, #C0C0C0 100%);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -58,6 +58,13 @@
 .pw-modal-close:hover {
   background: linear-gradient(90deg, #C0C0C0 60%, #0A1A2F 100%);
   color: #0A1A2F;
+}
+.pw-gallery-modal h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {

@@ -22,31 +22,27 @@ const images = [
 ];
 
 interface GalleryModalProps {
-  open: boolean;
-  onClose: () => void;
+  open?: boolean;
+  onClose?: () => void;
 }
 
-const GalleryModal: React.FC<GalleryModalProps> = ({ open, onClose }) => {
-  if (!open) return null;
+const GalleryModal: React.FC<GalleryModalProps> = () => {
   return (
-    <div className="pw-modal-overlay">
-      <div className="pw-modal">
-        <h2>Before & After Gallery</h2>
-        <div className="pw-gallery-grid">
-          {images.map((img, idx) => (
-            <div className="pw-gallery-pair" key={idx}>
-              <div>
-                <img src={img.before} alt={`Before ${idx + 1}`} />
-                <div className="pw-gallery-label">Before</div>
-              </div>
-              <div>
-                <img src={img.after} alt={`After ${idx + 1}`} />
-                <div className="pw-gallery-label">After</div>
-              </div>
+    <div className="pw-gallery-modal">
+      <h3>Before & After Gallery</h3>
+      <div className="pw-gallery-grid">
+        {images.map((img, idx) => (
+          <div className="pw-gallery-pair" key={idx}>
+            <div>
+              <img src={img.before} alt={`Before ${idx + 1}`} />
+              <div className="pw-gallery-label">Before</div>
             </div>
-          ))}
-        </div>
-        <button className="pw-modal-close" onClick={onClose}>Close</button>
+            <div>
+              <img src={img.after} alt={`After ${idx + 1}`} />
+              <div className="pw-gallery-label">After</div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

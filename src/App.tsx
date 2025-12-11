@@ -36,9 +36,9 @@ const App: React.FC = () => {
 
   return (
     <div className="pw-root">
-      <GalleryModal open={galleryOpen} onClose={() => setGalleryOpen(false)} />
+     
       <header className="pw-header">
-        <div className="pw-logo">PerfectWash</div>
+        <div className="pw-logo">MrCleanRide</div>
       </header>
       <main>
         <section className="pw-banner">
@@ -74,6 +74,8 @@ const App: React.FC = () => {
           <a className="pw-book-btn" href="tel:+16824175791">Call to Book</a>
         </section>
         <div className="pw-payment">Payment: <b>Cash or Zelle Only</b></div>
+        <hr />
+         <GalleryModal open={galleryOpen} onClose={() => setGalleryOpen(false)} />
       </main>
     </div>
   );
